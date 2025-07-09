@@ -1,0 +1,41 @@
+body{
+    background-color: pink;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 20px;
+}
+.navbar{
+    background-color:black;
+    color: white;
+    padding: 10px;
+    text-align: center;
+}.navbar a{
+    color: white;
+    text-decoration: chocolate;
+    padding: 10px;
+}
+.navbar a::afterhover{
+    color:aqua;
+    background-color:greenyellow;
+}
+.navbar li{
+    display: inline;
+    margin: 20px;
+    text-decoration: none;
+}
+.navbar h1{
+    margin: 0;
+    font-size: 24px;
+}
+.myworks{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+.myworks2{
+    text-color:green;
+}
+.p{
+    text-align: center;
+}
