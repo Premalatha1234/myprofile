@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+        body{
+            font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            background-color:black;
+            color: aliceblue;
+        }
+        #bgvideo{
+            position: fixed;
+            right: 0;
+            bottom: 0;
+            min-width: 100vw;
+            min-height: 100vh;
+            object-fit: cover;
+            z-index: -2;
+            opacity: 0.2;
+        }
+        header{
+            background-color:rgb(235, 135, 222);
+            color: beige;
+            padding: 20px;
+            text-align: center;
+        }
+        header a{
+            color: black;
+            margin: 0 15px;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        .menu-section{
+            padding: 40px 20px;
+        }
+        .menu-sectionh2{
+            font-size: 30px;
+            margin: 20px 0;
+            display: inline-block;
+        }
+        .menu-grid{
+            display: grid;
+            grid-template-columns: repeat(auto-fit,minmax(220px, 1fr));
+            gap:50px;
+            margin-top: 20px;
+        }
+        .menu-item{
+            background: rgba(255, 0, 111, 0.23);
+            border: 2px solid black;
+            padding: 15px;
+            border-radius: 10px;
+            box-shadow: 0 3px 6px rgba(0, 0,0,1);
+            transition: transform 0.2 ease;
+        }
+        .menu-item:hover{
+            transform: scale(1.05);
+        }
+        .menu-item h3,p{
+            font-size: large;
+        }
+        footer{
+            background-color: burlywood;
+            text-align: center;
+        }
+        .menu-item img{
+            width:100%;
+            height: auto;
+            border-radius: 10px;
+        }
+    </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E-commerce</title>
+</head>
+<body>
+    <video autoplay muted loop id="bgvideo">
+        <source src="C:\Users\User\Downloads\14036464_1920_1080_24fps.mp4" type="video/mp4">
+    </video>
+    <header>
+        <h1>WELCOME TO S-MART</h1>
+        <P> All your needs at one stop!</P>
+        <nav>
+            <a href="">Items</a>
+            <a href="">Contact</a>
+            <a href="">Services</a>
+        </nav>
+    </header>
+    <div class="menu-section">
+        <h2> Grocery</h2>
+        <div class="menu-grid">
+            <div class="menu-item">
+                <a href="atta.html"><img src="https://images.pexels.com/photos/8820570/pexels-photo-8820570.jpeg"></a>
+                <h3> Atta</h3>
+                
+                <span> $5.6</span>
+            </div>
+            <div class="menu-item">
+                <a href="dryfruits.html"><img src="https://images.pexels.com/photos/7625229/pexels-photo-7625229.jpeg"></a>
+                <h3> Dryfruits</h3>/a>
+    
+                <span> $2.5</span>
+            </div>
+            <div class="menu-item">
+                <a href="kitchenitems.html"><img src="https://images.pexels.com/photos/29559669/pexels-photo-29559669.jpeg"></a>
+                <h3> kitchen Items</h3>
+                <span> $20</span>
+            </div>
+            <div class="menu-item">
+                <a href="juices.html"><img src="https://images.pexels.com/photos/17612776/pexels-photo-17612776.jpeg"></a>
+                <h3> Juices</h3>
+                <span> $6.5</span>
+            </div>
+            <div class="menu-item">
+                <a href="vegetables.html"><img src="https://images.pexels.com/photos/2255935/pexels-photo-2255935.jpeg"></a>
+                <h3>Vegetables</h3>
+                <span> $5.6</span>
+            </div>
+        </div>
+        <h2> Sports</h2>
+        <div class="menu-grid">
+            <div class="menu-item">
+                <a href="shoes.html"><img src="https://images.pexels.com/photos/1537671/pexels-photo-1537671.jpeg"></a>
+                <h3>Running shoe</h3>
+                <span> $5.6</span>
+            </div>
+            <div class="menu-item">
+                <a href="badminton.html"><img src="https://images.pexels.com/photos/3660204/pexels-photo-3660204.jpeg"></a>
+                <h3>badminton</h3>
+                <span> $5.6</span>
+            </div>
+            <div class="menu-item">
+                <a href="cricket.html"><img src="https://images.pexels.com/photos/10987827/pexels-photo-10987827.jpeg"></a>
+                <h3>cricket</h3>
+                <span> $5.6</span>
+            </div>
+            <div class="menu-item">
+                <a href="hockey.html"><img src="https://images.pexels.com/photos/8972142/pexels-photo-8972142.jpeg"></a>
+                <h3>Hockey</h3>
+                <span> $5.6</span>
+            </div>
+            <div class="menu-item">
+                <a href="volleyball.html"><img src="https://images.pexels.com/photos/6203594/pexels-photo-6203594.jpeg"></a>
+                <h3>volley ball</h3>
+                <span> $5.6</span>
+            </div>
+    </div>
+    <h2> Meat</h2>
+        <div class="menu-grid">
+            <div class="menu-item">
+                <a href="chicken.html"><img src="https://images.pexels.com/photos/9016550/pexels-photo-9016550.jpeg"></a>
+                <h3>chicken</h3>
+                <span> $5.6</span>
+            </div>
+            <div class="menu-item">
+                <a href="cheese.html"><img src="https://images.pexels.com/photos/4109946/pexels-photo-4109946.jpeg"></a>
+                <h3>cheese</h3>
+                <span> $5.6</span>
+            </div>
+            <div class="menu-item">
+                <a href="mutton.html"><img src="https://images.pexels.com/photos/31732110/pexels-photo-31732110.jpeg"></a>
+                <h3>mutton</h3>
+                <span> $5.6</span>
+            </div>
+            <div class="menu-item">
+                <a href="prawns.html"><img src="https://images.pexels.com/photos/8351657/pexels-photo-8351657.jpeg"></a>
+                <h3>prawns</h3>
+                <span> $5.6</span>
+            </div>
+            <div class="menu-item">
+                <a href="crab.html"><img src="https://images.pexels.com/photos/566343/pexels-photo-566343.jpeg"></a>
+                <h3>crab</h3>
+                <span> $5.6</span>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <p>copy@ 2025 s-mart shop</p>
+        <p><a follow us on www.s-mart.com></a></p>
+
+    </footer>
+    
+</body>
+</html>
