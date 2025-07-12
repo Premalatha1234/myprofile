@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 20px;
+        }
+        header{
+            background-color: brown;
+            color: coral;
+            padding: 10px 0;
+            text-align: center;
+        }
+        nav h1{
+            margin: 0;
+            font-size: 24px;
+        }
+        nav{
+            margin-bottom: 20px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Donate Blood Save Life</h1>
+    <form action="" id="eligibility_form">
+        <label for="">Age</label> <br>
+        <input type="number" name="" id="age"><br>
+        <label for="">Blood Count</label> <br>
+        <input type="number" name="" id="bld_cnt"><br>
+        <label for="">Hemoglobin</label> <br>
+        <input type="number" name="" id="hemo"><br>
+        <label for="">Blood Sugar levels</label> <br>
+        <input type="number" name="" id="Bs"><br>
+        <br> 
+        <input type="submit" value="check eligibility" id="check eligibility"><br>
+        <div class="results"></div>
+    </form>
+    <div class="results" id="results"></div>
+    <script>
+    document.getElementById("eligibility_form").addEventListener("submit", function(event)
+    {
+        event.preventDefault();
+        let age = document.getElementById("age").value;
+        let bld_cnt = document.getElementById("bld_cnt").value;
+        let hemo = document.getElementById("hemo").value;
+        let Bs = document.getElementById("Bs").value;
+        let results = document.getElementById("results");
+        if(age>=18){
+            if(bld_cnt>100000){
+                if(hemo>12){
+                    if(Bs>=80 && Bs<=120){
+                        results.innerHTML = "your eligible to donate";
+                    }
+                    else{
+                        results.innerHtml = "your are not eligible to donate";
+                    }
+                }else{
+                    results.innerHTML = "your not eligible due to low hemo";
+                }
+            }else{
+                results.innerHTML = "you are not eligible due to blood count";
+            }
+        }else{
+            results.innerHTML = "you are not eligible due to age";
+        }
+    }
+    );
+    </script>
+</body>
+</html>

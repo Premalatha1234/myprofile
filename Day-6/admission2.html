@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Admission Form</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: #f2f2f2;
+            padding: 20px;
+        }
+        .form-container {
+            background: #fff;
+            padding: 30px;
+            max-width: 700px;
+            margin: auto;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+        h2 {
+            text-align: center;
+        }
+        label {
+            display: block;
+            margin-top: 15px;
+            font-weight: bold;
+        }
+        input, select, textarea {
+            width: 100%;
+            padding: 8px;
+            margin-top: 5px;
+            border-radius: 4px;
+            border: 1px solid #ccc;
+        }
+        input[type="file"] {
+            border: none;
+        }
+        button {
+            margin-top: 20px;
+            padding: 10px;
+            width: 100%;
+            background-color: #28a745;
+            color: white;
+            font-size: 16px;
+            border: none;
+            border-radius: 5px;
+        }
+        button:hover {
+            background-color: #218838;
+        }
+    </style>
+</head>
+<body>
+
+<div class="form-container">
+    <h2>Admission Form</h2>
+    <form action="#" method="post" enctype="multipart/form-data">
+        <label for="fname">First Name:</label>
+        <input type="text" id="fname" name="first_name" required>
+
+        <label for="lname">Last Name:</label>
+        <input type="text" id="lname" name="last_name" required>
+
+        <label for="father">Father's Name:</label>
+        <input type="text" id="father" name="father_name" required>
+
+        <label for="marks">Inter/Diploma Marks (%):</label>
+        <input type="number" id="marks" name="marks" step="0.01" required>
+
+        <label for="course">Course:</label>
+        <select id="course" name="course" required>
+            <option value="">--Select Course--</option>
+            <option value="btech">B.Tech</option>
+            <option value="bsc">B.Sc</option>
+            <option value="bcom">B.Com</option>
+            <option value="ba">B.A</option>
+        </select>
+
+        <label for="hostel">Accommodation:</label>
+        <select id="hostel" name="hostel_option" required>
+            <option value="">--Select Option--</option>
+            <option value="hostel">Hostel</option>
+            <option value="without">Without Hostel</option>
+            <option value="participation">Any Participation</option>
+        </select>
+
+        <label for="mobile">Mobile Number:</label>
+        <input type="tel" id="mobile" name="mobile" pattern="[0-9]{10}" required>
+
+        <label for="image">Upload Image (Passport Size):</label>
+        <input type="file" id="image" name="photo" accept="image/*" required>
+
+        <label for="cert10">Upload 10th Certificate:</label>
+        <input type="file" id="cert10" name="cert_10th" accept=".pdf,.jpg,.jpeg,.png" required>
+
+        <label for="certinter">Upload Inter/Diploma Certificate:</label>
+        <input type="file" id="certinter" name="cert_inter" accept=".pdf,.jpg,.jpeg,.png" required>
+
+        <button type="submit">Submit Admission Form</button>
+    </form>
+</div>
+
+</body>
+</html>
